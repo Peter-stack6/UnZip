@@ -94,8 +94,8 @@ def UploadFile(request):
                             encrypted = True
 
                     case 'application/vnd.rar' | 'application/x-rar':
-                        rarfile.UNRAR_TOOL = os.path.join('unrar', 'unrar.exe')
                         with rarfile.RarFile(file_bytes) as rar:
+                            rarfile.UNRAR_TOOL = os.path.join('unrar', 'unrar.exe')
                             tree = True
                             if not rar.needs_password():
                                 extracted_paths = [info.filename for info in rar.infolist() if not info.isdir()]
