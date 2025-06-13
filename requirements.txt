@@ -3,4 +3,5 @@ py7zr==0.21.0
 rarfile==4.1
 python-dotenv==1.0.1
 gunicorn==21.2.0
+python-magic==0.4.27
 whitenoise
