@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}UnZip{% endblock %}</title>
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static 'css/general.css' %}">
+    {% endblock %}
+    <link rel="icon" href="{% static 'img/logo.png' %}">
+</head>
+<body>
+    <div id="top">
+        <img src="{% static 'img/logo.png' %}" id="brand-img">
+        <h2 id="brand">UnZip</h2>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <div id="bottom">
+        <h1 id="product">UnZip &copy;</h1>
+        <p id="by">by iBros Corporations&reg;</p>
+    </div>
+</body>
+</html>

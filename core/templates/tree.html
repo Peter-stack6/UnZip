@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UnZip - {{ name }} | File Tree</title>
+  <link rel="stylesheet" href="{% static 'css/tree.css' %}">
+  <link rel="icon" href="{% static 'img/logo.png' %}">
+</head>
+<body>
+  <h1>File Tree for {{ name }}</h1>
+  <ul>
+    {% for key, value in tree.items %}
+      {% include "tree_node.html" with node_key=key node_value=value %}
+    {% endfor %}
+  </ul>
+  <div id="bottom">
+    <a href="{% url 'download' %}" id="download-btn">Download ZIP</a>
+  </div>
+</body>
+</html>

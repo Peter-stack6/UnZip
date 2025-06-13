@@ -1,0 +1,24 @@
+* {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.heading {
+    border: 2px groove
+}
+
+#upload-btn {
+    width: 20%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 0px;
+    border-radius: 6px;
+    margin-top: 7px;
+}

@@ -1,0 +1,34 @@
+{% extends 'general.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" href="{% static 'css/general.css' %}">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div id="soon">
+        Desktop App is coming soon! Enjoy the web version while you wait
+    </div>
+    <div id="begin">
+        <h1>UnZip</h1>
+        <p id="intro">
+            UnZip is a website where you can uncompress different compressed folder formats like ZIP, RAR, 7z, TAR, GZIP, BZIP2, XZ
+        </p>
+        <a href="{% url 'upload' %}" id="start">
+            Try It Out | &gt;
+        </a>
+    </div>
+    <style>
+        #begin {
+            background-image: url("{% static 'img/space.png' %}");
+        }
+    </style>
+    {% endblock %}
+</body>
+</html>

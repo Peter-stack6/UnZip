@@ -1,0 +1,27 @@
+* {
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: white;
+    border: 0px;
+}
+
+#download-btn {
+    text-decoration: none;
+    border: none;
+    color: beige;
+    padding: 20px;
+    background-color: rgb(1, 5, 200);
+    border-radius: 12px;
+}
+
+#bottom {
+    margin-top: 20px;
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 7px;
+}

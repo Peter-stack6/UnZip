@@ -1,0 +1,35 @@
+#top {
+    display: flex;
+    width: 100%;
+    background-color: #010003;
+    color: white;
+}
+
+#brand {
+    background-color: #010003;
+}
+
+#brand-img {
+    background-color: #010003;
+    height: fit-content;
+    width: fit-content;
+    margin-right: 5px;
+    border: 1px, groove, beige
+}
+
+#bottom {
+    background-color: rgb(14, 6, 6);
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    height: fit-content;
+}
+
+#product {
+    background-color: rgb(14, 6, 6);
+}
+
+#by {
+    background-color: rgb(14, 6, 6);
+    font-style: italic;
+}

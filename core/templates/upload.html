@@ -1,0 +1,29 @@
+{% extends 'general.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+        <link rel="stylesheet" href="{% static 'css/general.css' %}">
+    {% endblock %}
+    <title>{% block title %}UnZip | Input Files{% endblock %}</title>
+    
+    <link rel="icon" href="{% static 'img/logo.png' %}">
+</head>
+<body>
+    {% block content %}
+    <h2 class="heading">Upload files here</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" id="upload-btn">Upload</button>
+    </form>
+    <div id="formats">
+        Supported formats: zip, rar, tar, 7z, gz, xz, bz2
+    </div>
+    {% endblock %}
+</body>
+</html>

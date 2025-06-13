@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UnZip - {{ name }} | Single File</title>
+    <link rel="stylesheet" href="{% static 'css/tree.css' %}">
+    <link rel="icon" href="{% static 'img/logo.png' %}">
+</head>
+<body>
+    <h1>Your Single File is</h1>
+    <p>{{ name }}</p>
+
+    <div id="bottom">
+        <a href="{% url 'download-single' %}" id="download-btn">Download</a>
+    </div>

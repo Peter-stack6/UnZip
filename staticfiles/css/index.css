@@ -1,0 +1,93 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top {
+    position: fixed;
+    width: 100%;
+    background-color: #010003;
+    color: white;
+}
+
+#brand {
+    float: left;
+}
+
+#links {
+    float: right;
+    width: 50%;
+    font-weight: 650;
+    margin-top: 10px;
+}
+
+#signup {
+    background-color: #1101fd;
+    color: white;
+    padding: 5px;
+    border: 0px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#login {
+    background-color: #010003;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+#begin {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 23%;
+    padding-bottom: 23%;
+    color: white;
+}
+
+#intro {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#start {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #1101fd;
+    font-weight: 800;
+    border: 1px solid;
+    border-radius: 24px;
+    text-align: center;
+}
+
+#start:hover {
+    cursor: pointer;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#btn {
+    background-color: rgb(11, 254, 2);
+}
+
+#get-course {
+    text-decoration: none;
+    color: rgb(255, 254, 252);
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 90px;
+    width: 6cm;
+    height: 2cm;
+}

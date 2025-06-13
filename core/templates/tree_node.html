@@ -1,0 +1,10 @@
+<li>
+  {{ node_key }}
+  {% if node_value %}
+    <ul>
+      {% for key, value in node_value.items %}
+        {% include "tree_node.html" with node_key=key node_value=value %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</li>

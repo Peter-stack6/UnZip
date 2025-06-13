@@ -1,0 +1,35 @@
+* {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    border: 2px groove
+}
+
+#formats {
+    margin: 10%;
+    text-align: center;
+    background-color: beige;
+    border: none;
+    height: fit-content;
+    width: 80%;
+    border-radius: 7px;
+    font-style: italic;
+}
+
+#upload-btn {
+    width: 20%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 0px;
+    border-radius: 6px;
+    margin-top: 7px;
+}
+
+#upload-btn:hover {
+    cursor: pointer;
+}
