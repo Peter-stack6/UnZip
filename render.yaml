@@ -3,7 +3,10 @@ services:
     name: my-django-app
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      apt-get update
+      apt-get install -y unrar
+      pip install -r requirements.txt
     startCommand: gunicorn your_project_name.wsgi
     envVars:
       - fromGroup: django-prod-env
