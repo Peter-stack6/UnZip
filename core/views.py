@@ -298,7 +298,7 @@ def DownloadZip(request):
                                 new_zip.write(file_path, arcname=arcname)
 
                 case 'application/vnd.rar' | 'application/x-rar':
-                    rarfile.UNRAR_TOOL = os.path.join('unrar', 'unrar.exe')
+                    rarfile.UNRAR_TOOL = "unrar"
                     with rarfile.RarFile(io.BytesIO(file_content)) as rar:
                         for info in rar.infolist():
                             if not info.isdir():
