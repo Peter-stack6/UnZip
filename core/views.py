@@ -13,7 +13,7 @@ def HomePage(request):
     context = {
         "meta_desc": "Welcome to our free online file tool! Upload, analyze, and manage various archive formats like ZIP, RAR, 7Z, and more, all with ease."
     }
-    return render(request, "index.html", meta_desc)
+    return render(request, "index.html", content)
 
 def build_tree(paths):
     tree = lambda: defaultdict(tree)
