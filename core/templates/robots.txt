@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /tree/
+Disallow: /single-file/
+Disallow: /enter-password/
+
+Sitemap: https://{{ DOMAIN }}/sitemap.xml
