@@ -10,7 +10,10 @@ from .forms import Upload
 from .utils import detect_mime
 
 def HomePage(request):
-    return render(request, "index.html")
+    context = {
+        "meta_desc": "Welcome to our free online file tool! Upload, analyze, and manage various archive formats like ZIP, RAR, 7Z, and more, all with ease."
+    }
+    return render(request, "index.html", meta_desc)
 
 def build_tree(paths):
     tree = lambda: defaultdict(tree)
@@ -133,7 +136,7 @@ def UploadFile(request):
                 request.session['uploaded_file_content'] = encoded_file
     else:
         form = Upload
-    return render(request, 'upload.html', {'form': form})
+    return render(request, 'upload.html', {'form': form, 'meta_desc': 'Extract ZIP, RAR, 7Z, GZ, BZ2, and XZ archives online instantly. Our free archive extractor tool supports all popular formats for quick and easy file extraction on any device.'})
 
 @csrf_exempt
 def EnterPassword(request):
