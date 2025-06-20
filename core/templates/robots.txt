@@ -5,4 +5,4 @@ Disallow: /tree/
 Disallow: /single-file/
 Disallow: /enter-password/
 
-Sitemap: https://{{ DOMAIN }}/sitemap.xml
+Sitemap: https://unzip-28cr.onrender.com/sitemap.xml
