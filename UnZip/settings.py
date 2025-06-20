@@ -25,7 +25,6 @@ DEBUG = os.getenv('DEBUG')
 ALLOWED_HOSTS = ALLOWED_HOSTS = [host.strip() for host in os.getenv('ALLOWED_HOSTS', 'localhost').split(',')]
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -33,8 +32,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+
+    'core',
 ]
+
+SITE_ID = 1
+
+DOMAIN = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
