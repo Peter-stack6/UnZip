@@ -3,13 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ meta_desc }}">
-    <meta name="google-site-verification" content="2-a0pyFarBPckeF_hQarEztrSuPqLan3nXPahOu2IHs" />
-    {% block extra_css %}
-        <link rel="stylesheet" href="{% static 'css/index.css' %}">
-        <link rel="stylesheet" href="{% static 'css/general.css' %}">
+    {% block head_extra %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ meta_desc }}">
+        {% block extra_css %}
+            <link rel="stylesheet" href="{% static 'css/index.css' %}">
+            <link rel="stylesheet" href="{% static 'css/general.css' %}">
+        {% endblock %}
     {% endblock %}
 </head>
 <body>
